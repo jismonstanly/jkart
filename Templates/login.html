@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JKART</title>
+</head>
+<body>
+<div class="box">
+    LOGIN<br>
+    <form action="{% url 'login' %}" method="post">
+        {%csrf_token%}
+    user name:<input type="text" name="username"><br>
+    password:<input type="password" name="password"><br>
+    <input type="submit">
+    </form>
+    <a href="{% url 'registration' %}"> registration</a>
+
+</div>
+
+</body>
+</html>

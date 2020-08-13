@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jk registerartion</title>
+</head>
+<body>
+REGISTERATION
+<br>
+<form action="{% url 'index' %}" method="post">
+    {%csrf_token%}
+first name:<input type="text" name="firstname">
+last name: <input type="text" name="lastname">
+username:<input type="text" name="username">
+password:<input type="text" name="password">
+<input type="submit">
+</form>
+</body>
+</html>
